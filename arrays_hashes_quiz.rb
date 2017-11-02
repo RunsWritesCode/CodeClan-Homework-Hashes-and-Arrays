@@ -117,7 +117,7 @@ p "#{users["Avril"][:pets]["colin"]}" #wasted 40 minutes typing Colin with caps.
 
 # 5. Return the smallest of Erik's favourite numbers
 
-# p "The smallest of Eric's favourite numbers is "#{users["Erik"][:favourite_numbers]}"
+p "The smallest of Eric's favourite numbers is #{users["Erik"][:favourite_numbers].min}"
 
 # 6. Add the number `7` to Erik's favourite numbers
 
@@ -130,6 +130,8 @@ p "#{users["Erik"][:home_town] = "Edinburgh"}"
 # 8. Add a pet dog to Erik called "Fluffy"
 
 p "#{users["Erik"][:pets] = "Fluffy"}"
+# p "#{users["Erik"][:pets]["Fluffy"] = :dog}"
+
 
 # 9. Add yourself to the users hash
 p users["Sophie"] = {
